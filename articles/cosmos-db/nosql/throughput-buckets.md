@@ -117,7 +117,7 @@ ItemResponse<Product> response = await container.ReadItemAsync<Product>(partitio
 ```
 
 > [!Note]
-> If bulk execution is enabled, a throughput bucket can't be assigned to an individual request using the RequestOptions.
+> If bulk execution is enabled, throughput bucket set at the request level is ignored and throughput bucket set at the client is utilized.
 
 ### Bucket behavior in Data Explorer
 
